@@ -6,6 +6,7 @@
 // @author       SimonH
 // @match        ://*.quickbase.com/db/*a=dr*
 // @match        ://*.quickbase.com/db/*a=er*
+// @match        ://*.quickbase.com/db/*a=nwr*
 // @icon         https://www.quickbase.com/favicon-32x32.png
 // @grant        none
 // @run-at      document-idle
