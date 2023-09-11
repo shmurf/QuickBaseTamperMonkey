@@ -25,6 +25,7 @@ let exitSettings = document.getElementById("pageNavBarExitSettingsAction");
 let homeButton = document.createElement("a");
 homeButton.classList.add("Settings");
 homeButton.onclick = tableHome;
+homeButton.href = "#";
 homeButton.innerText = "Table HomePage";
 
 exitSettings.appendChild(homeButton);
