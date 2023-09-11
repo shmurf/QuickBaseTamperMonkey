@@ -26,7 +26,7 @@ let homeButton = document.createElement("a");
 homeButton.classList.add("Settings");
 homeButton.onclick = tableHome;
 homeButton.href = "#";
-homeButton.innerHTML = <span class="Icon Icon16 GoBack"></span><span>Table Home Page</span>;
+homeButton.innerHTML = '<span class="Icon Icon16 GoBack"></span><span>Table Home Page</span>';
 
 exitSettings.appendChild(homeButton);
 
