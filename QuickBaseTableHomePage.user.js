@@ -15,7 +15,7 @@
 // @match        ://*.quickbase.com/db/*a=WebhookList*
 // @match        ://*.quickbase.com/db/*a=QuickBaseActionList*
 // @grant        none
-// @updateURL    https://github.com/jtorrence0/QuickBaseTamperMonkey/raw/master/QuickBaseTableHomePage.user.js
+// @updateURL    https://github.com/shmurf/QuickBaseTamperMonkey/raw/master/QuickBaseTableHomePage.user.js
 // ==/UserScript==
 
 let $ = window.jQuery;
