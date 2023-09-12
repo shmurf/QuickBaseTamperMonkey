@@ -4,6 +4,7 @@
 // @version      0.1
 // @description  Redirect from table settings to table home page regardless of origin
 // @author       SimonH
+// @match        ://*.quickbase.com/db/*a=TableSettingsHome*
 // @match        ://*.quickbase.com/db/*a=listfields*
 // @match        ://*.quickbase.com/db/*a=Relationships*
 // @match        ://*.quickbase.com/db/*a=KeyProps*
