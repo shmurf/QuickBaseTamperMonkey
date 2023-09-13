@@ -1,13 +1,12 @@
 // ==UserScript==
-// @name         QuickBase Restrict Role Access
-// @namespace    QuickBaseRestrictRoleAccess
+// @name         QuickBase Download Table Fields
+// @namespace    QuickBaseDownloadTableFields
 // @version      0.1
 // @description  Change all permission values at once
 // @author       Justin Torrence
 // @match        ://*.quickbase.com/db/*a=listfields*
-// @match        ://*.quickbase.com/db/*a=ListFields*
 // @grant        none
-// @updateURL    https://github.com/jtorrence0/QuickBaseTamperMonkey/raw/master/QuickbaseFieldExport.user.js
+// @updateURL    https://github.com/shmurf/QuickBaseTamperMonkey/raw/master/QuickbaseFieldExport.user.js
 // ==/UserScript==
 
 let $ = window.jQuery;
