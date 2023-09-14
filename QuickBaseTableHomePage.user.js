@@ -4,16 +4,10 @@
 // @version      0.1
 // @description  Redirect from table settings to table home page regardless of origin
 // @author       SimonH
-// @match        ://*.quickbase.com/db/*a=listfields*
-// @match        ://*.quickbase.com/db/*a=Relationships*
-// @match        ://*.quickbase.com/db/*a=KeyProps*
-// @match        ://*.quickbase.com/db/*a=tablehomepagesettings*
-// @match        ://*.quickbase.com/db/*a=reportList*
-// @match        ://*.quickbase.com/db/*a=dformList*
-// @match        ://*.quickbase.com/db/*a=EmailList*
-// @match        ://*.quickbase.com/db/*a=TablePermissions*
-// @match        ://*.quickbase.com/db/*a=WebhookList*
-// @match        ://*.quickbase.com/db/*a=QuickBaseActionList*
+// @match        https://*.quickbase.com/db/*?a=*
+// @exclude      https://*.quickbase.com/db/*?a=*&*
+// @exclude      https://*.quickbase.com/db/*?a=td*
+// @exclude      https://*.quickbase.com/db/*?a=AppSettingsHome*
 // @grant        none
 // @updateURL    https://github.com/shmurf/QuickBaseTamperMonkey/raw/master/QuickBaseTableHomePage.user.js
 // ==/UserScript==
@@ -26,7 +20,7 @@ let homeButton = document.createElement("a");
 homeButton.classList.add("Settings");
 homeButton.onclick = tableHome;
 homeButton.href = "#";
-homeButton.innerHTML = '<span class="Icon Icon16 GoBack"></span><span>Table Home Page</span>';
+homeButton.innerHTML = '<span class="Icon Icon16"></span><span>&#x2302; Table Home Page</span>';
 
 exitSettings.appendChild(homeButton);
 
